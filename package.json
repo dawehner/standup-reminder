@@ -9,6 +9,7 @@
   "author": "",
   "license": "GPL-3.0",
   "dependencies": {
+    "node-cron": "^1.1.2",
     "osx-notifier": "^0.2.2"
   }
 }
