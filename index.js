@@ -2,7 +2,7 @@ var notify = require('osx-notifier');
 var cron = require('node-cron');
 
 // Stand up every 30 minutes at least.
-cron.schedule('* 30 * * *', () => {
+setInterval(() => {
   notify({
     type: 'fail',
     title: 'Stand up',
@@ -10,4 +10,7 @@ cron.schedule('* 30 * * *', () => {
     message: 'It is time for it',
     group: 'taskdoer',
   });
-});
+},
+//30*60*1000
+1000
+);
