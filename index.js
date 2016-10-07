@@ -1,5 +1,4 @@
 var notify = require('osx-notifier');
-var cron = require('node-cron');
 
 // Stand up every 30 minutes at least.
 setInterval(() => {
